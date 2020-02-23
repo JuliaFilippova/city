@@ -1,0 +1,746 @@
+/*FONT-FACE*/
+@font-face {
+  font-family: 'GothamPro 400';
+  src: url('../fonts/GothamPro.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GothamPro.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GothamPro.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GothamPro.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GothamPro.svg#GothamPro') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'GothamPro 700';
+  src: url('../fonts/GothamPro-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GothamPro-Bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GothamPro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GothamPro-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GothamPro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Metropolis 400';
+  src: url('../fonts/Metropolis-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Metropolis-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Metropolis-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Metropolis-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Metropolis-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Metropolis-Regular.svg#Metropolis-Regular') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Metropolis 700';
+  src: url('../fonts/Metropolis-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Metropolis-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Metropolis-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Metropolis-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Metropolis-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Metropolis-Bold.svg#Metropolis-Bold') format('svg'); /* Legacy iOS */
+}
+body {
+    font-family: 'Arial' sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+div, p, form, input, a, span, button {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    transition: .5s;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+    letter-spacing: 0.01em;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 80px;
+    color: #fff;
+}
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 28px;
+}
+h4 {
+    font-size: 25px;
+}
+h5 {
+    font-size: 22px;
+}
+h6 {
+    font-size: 18px;
+}
+button {
+    border: none;
+}
+button:focus {
+    outline: none;
+}
+.container-panel {
+    width: 100%;
+    padding: 0 15px;
+}
+.container-section {
+    padding: 0 60px;
+}
+.btn {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px 14px;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.btn:hover {
+    color: #fff;
+}
+/*header*/
+/*nav-menu*/
+.nav-bar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.nav-menu__list {
+    margin-left: auto;
+    margin-right: 50px;
+}
+.menu-active {
+    color: #4296f3!important;
+    border-bottom: 2px solid #4296f3!important;
+}
+.nav-menu__list li a {
+    padding: 10px 13px;
+    color: #000;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+}
+.nav-menu__list li a:hover {
+    color: #4296f3;
+    border-bottom: 2px solid #4296f3;
+}
+.nav-menu__list li .nav-phone:hover {
+    border-bottom: 2px solid transparent;
+}
+.nav-menu__btn {
+    padding: 10px 15px;
+    background: #4296f3;
+    border: 2px solid transparent;
+}
+.nav-menu__btn:hover {
+    background: transparent;
+    border: 2px solid #4296f3;
+    color: #4296f3;
+}
+.hamburger {
+    display: none;
+}
+#menuToggle span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #383838;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+.hamburger {
+    margin-top: 6px;
+    cursor: pointer;
+}
+/*nav-menu*/
+/*offer*/
+.header-bg {
+    background: url('../img/fon-bg.jpg') no-repeat center /cover;
+    padding: 200px 0 150px;
+}
+.offer {
+    text-align: center;
+}
+.offer__title {
+    font-family: 'GothamPro 700';
+}
+.offer__subtitle {
+    margin: 25px 0 29px;
+    font-size: 33px;
+    color: #fff;
+    font-family: 'Metropolis 400';
+}
+.offer__btn {
+    background: #fe9d13;
+    border: 2px solid transparent;
+}
+.offer__btn:hover {
+    background: transparent;
+    border: 2px solid #fe9d13;
+    color: #fe9d13;
+}
+/*header*/
+/*section-benefits*/
+.benefits .section-title {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.section-title {
+    color: #0a2a6a;
+    position: relative;
+    display: inline-block;
+}
+.section-title:before {
+    content: '';
+    position: absolute;
+    background: #0a2a6a;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 3px;
+}
+.benefits {
+    padding: 130px 0 50px;
+    text-align: center;
+}
+.benefits-box {
+    margin-top: 100px;
+}
+.benefits-item {
+    text-align: center;
+}
+.benefits-item__img-wrap {
+    min-height: 200px;
+}
+.benefits-item__img {
+    width: 100%;
+}
+.benefits-item__img_one {
+    max-width: 220px;
+}
+.benefits-item__img_two {
+    max-width: 130px;
+}
+.benefits-item__img_three {
+    max-width: 160px;
+}
+.benefits-item__img_four {
+    max-width: 155px;
+}
+.benefits-item__title {
+    font-family: 'Metropolis 400';
+    margin-bottom: 30px;
+}
+.benefits-item__text {
+    color: #777;
+    font-family: 'Metropolis 400';
+}
+/*section-benefits*/
+/*section-about*/
+.about-info__text .section-title {
+    font-family: 'GothamPro 700';
+}
+.about-info {
+    min-height: 735px;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+.about-info__img {
+    position: absolute;
+    height: 760px;
+}
+.about-info__img_right {
+    top: 0;
+    right: -60px;
+}
+.about-info__img_left {
+    bottom:  0;
+    left: -60px;
+}
+.about-info__text {
+    width: 700px;
+}
+.about-info__text p  {
+    font-size: 23px;
+    margin-top: 50px;
+    font-family: 'Metropolis 400';
+}
+.about-info__text_right {
+    margin-left: auto;
+    text-align: right;
+}
+.about-info__text_left .section-title:before {
+    left: 100px;
+}
+.about-info__text_right .section-title:before {
+    bottom: -20px;
+    width: 145px;
+    right: 18%;
+}
+/*section-about*/
+/*section-reviews*/
+.slick-prev {
+    left: -25px;
+}
+.slick-next {
+    right: -25px;
+}
+.slick-prev:before {
+    position: absolute;
+    content: '❮';
+    font-size: 35px;
+    top: 0;
+    left: 0;
+    color: #2b2b2b;
+}
+.slick-next:before {
+    position: absolute;
+    content: '❯';
+    font-size: 35px;
+    top: 0;
+    right: 0;
+    color: #2b2b2b;
+}
+.slick-arrow {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 45%;
+    background: transparent;
+    z-index: 333;
+}
+.reviews {
+    padding: 200px 0;
+}
+.reviews .section-title {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.reviews .section-title:before {
+    left: 100px;
+}
+.slider-reviews {
+    margin-top: 70px;
+}
+.reviews-wrap {
+    padding: 0 15px;
+}
+.reviews-card {
+    width: 95%;
+    margin: auto;
+    margin: 55px auto;
+    padding: 55px 25px 17px 25px;
+    box-shadow: 0 0 30px 0 rgba(35, 49, 66, 0.2);
+    border-radius: 10px;
+}
+.reviews-card__face {
+    width: 90px;
+    height: 90px;
+    border: 4px solid #257de0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.reviews-card__text {
+    margin-left: 30px;
+}
+.reviews-card__text p {
+    color: #777;
+    margin-top: 15px;
+    font-family: 'Metropolis 400';
+}
+.reviews-card__rating {
+    position: relative;
+    width: 100px;
+    height: 25px;
+    display: block;
+    margin: 15px 0;
+}
+.reviews-card__rating:before {
+    content: '★★★★★';
+    position: absolute;
+    font-size: 22px;
+    color: #ffa200;
+}
+.reviews-card__name {
+    text-align: right;
+    display: block;
+    color: #777;
+    font-family: 'Metropolis 400';
+}
+/*.slick-center .reviews-card {
+    width: 100%;
+    box-shadow: 0 0 60px 0 rgba(35, 49, 66, 0.3);
+    z-index: 444;
+}*/
+/*section-reviews*/
+/*section-footer*/
+.footer {
+    padding: 70px 0 55px;
+    background: #1f1f1f;
+}
+.footer-logo {
+    max-width: 230px;
+    margin-right: 45px;
+}
+.footer-title {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+}
+.footer-title:before {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 1px;
+    background: #fff;
+    bottom: -8px;
+    left: 0;
+}
+.footer-network__link {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer-network__link img {
+    width: 100%;
+}
+.footer-menu li a {
+    color: #7a7272;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    display: inline-block;
+}
+.footer-menu li a:hover {
+    color: #fff;
+}
+.footer-contacts {
+    width: 220px;
+}
+.footer-contacts li a {
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 0;
+    display: inline-block;
+}
+.footer-contacts li a:hover {
+    color: #446cc2;
+}
+.footer-location {
+    width: 270px;
+    margin-left: auto;
+}
+.footer-map iframe {
+    width: 100%;
+    height: 300px;
+}
+.footer-location__address {
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 25px;
+    display: inline-block;
+}
+.network-wrap {
+    margin-left: 28px;
+}
+.footer-copy {
+    font-size: 13px;
+    color: #4b4b4b;
+    width: 100%;
+    padding-top: 40px;
+    border-top: 2px solid #4b4b4b;
+    text-align: center;
+    margin-top: 25px;
+}
+/*section-footer*/
+/*PAGE FORM*/
+.form-content__form input {
+    display: inline-block;
+    padding: 16px 17px 14px;
+    border: 2px solid #c0bec6;
+    border-radius: 10px;
+    margin: 15px 0 20px;
+    width: 450px;
+}
+.form-content__hint {
+
+}
+.form-content__btn {
+    background: #437ecc;
+    margin: 26px 0 30px;
+    display: block;
+}
+.form-content__info {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.form-content__info img{
+    margin-right: 17px;
+}
+.add-file {
+    display: block;
+}
+.add-file i {
+    font-size: 20px;
+    
+}
+.add-file .add-file__properly {
+    color: #57cc51;
+} 
+.add-file .add-file__error {
+    color: #d53b3b;
+} 
+/*PAGE FORM*/
+/*-- MEDIA QUERIES --*/
+/* 768-992px col-md */
+@media screen and (max-width: 1300px) {
+    .nav-logo img {
+        width: 200px;
+    }
+    .nav-menu__list {
+        margin-right: 10px;
+    }
+    .nav-menu__list li a {
+        padding: 10px;
+    }
+    .nav-menu__btn {
+        font-size: 18px;
+    }
+    .benefits-item__title {
+        min-height: 60px;
+    }
+    .about-info__text {
+        width: 615px;
+    }
+    .footer-logo {
+        max-width: 200px;
+    }
+}
+/* 768-992px col-md */
+@media screen and (max-width: 1199px) {
+    h1 {
+        font-size: 65px;
+    }
+    .nav-logo img {
+        width: 150px;
+    }
+    .nav-menu__list li a {
+        padding: 9px;
+        font-size: 14px;
+    }
+    .nav-menu__btn {
+        font-size: 16px;
+    }
+    .offer__subtitle {
+        font-size: 25px;
+    }
+    .benefits-item__img_one {
+        max-width: 175px;
+    }
+    .benefits-item__img_two {
+        max-width: 110px;
+    }
+    .benefits-item__img_three {
+        max-width: 140px;
+    }
+    .benefits-item__img_four {
+        max-width: 140px;
+    }
+    .about-info {
+        min-height: 580px;
+    }
+    .about-info img {
+        height: 600px;
+    }
+    .about-info__text {
+        width: 470px;
+    }
+    .footer-location {
+        width: 225px;
+    }
+    .footer-location {
+        width: 100%;
+    }
+    .footer-location {
+        margin-top: 55px;
+    }
+}
+/* 768-992px col-md */
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 42px;
+    }
+    .container-section {
+        padding: 0 25px;
+    }
+    .nav-menu__btn,
+    .nav-menu__list {
+        display: none!important;
+    }
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+    .nav-menu__btn {
+        margin-left: auto;
+    }
+    .offer__subtitle {
+        font-size: 19px;
+    }
+    .benefits-item__img-wrap {
+        min-height: 160px;
+    }
+    .benefits-item__title {
+        min-height: 0;
+    }
+    .benefits-item {
+        margin-bottom: 40px;
+    }
+    .slick-prev {
+        left: 0px;
+    }
+    .slick-next {
+        right: 0px;
+    }
+    .about-info img {
+        display: none;
+    }
+    .about-info__text {
+        width: 100%;
+    }
+    .about-info {
+        min-height: 500px;
+    }
+    .network-wrap {
+        margin-top: 55px;
+    }
+        
+}
+/* 768-992px col-md */
+@media screen and (max-width: 768px) {
+    .about-info__text p {
+        font-size: 20px;
+    }
+    .about-info__text_left .section-title:before {
+        left: 100px;
+    }
+    .benefits-item__title {
+        min-height: 60px;
+    }
+    .about-info {
+        min-height: 380px;
+    }
+    .footer-logo {
+        margin: auto;
+        display: flex;
+    }
+    .footer-menu,
+    .footer-contacts {
+        margin-top: 45px;
+    }
+}
+/* 768-992px col-md */
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 30px;
+    }
+    .nav-bar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .about-info__text p {
+        font-size: 18px;
+    }
+    .reviews-card__face {
+        width: 78px;
+        height: 78px;
+        border: 3px solid #257de0;
+    }
+    .reviews-card {
+        padding: 40px 10px 17px 15px;
+    }
+    .footer-contacts {
+        width: 100%;
+    }
+    .footer-menu,
+    .footer-contacts,
+    .network-wrap,
+    .footer-location {
+        text-align: center;
+    }
+    .footer-title {
+        display: inline-block;
+    }
+    .network-wrap .footer-title:before {
+        left: 29px;
+    }
+    .footer-location .footer-title:before {
+        left: 10px;
+    }
+    .footer-title:before {
+        left: 45px;
+    }
+    
+}
+/* 768-992px col-md */
+@media screen and (max-width: 420px) {
+    h2 {
+        font-size: 24px;
+    }
+    .container-section {
+        padding: 0px 15px;
+    }
+    .about-info__text_right .section-title:before {
+        left: 30px;
+    }
+    .reviews-card {
+        flex-direction: column;
+    }
+    .slick-slide img {
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .reviews-card__rating {
+        margin: 12px auto;
+    }
+    .reviews-card {
+        padding: 40px 10px 17px 10px;
+    }
+    .reviews-card__text {
+        margin: auto;
+        text-align: center;
+    }
+    .reviews-card__rating:before {
+        left: 0;
+    }
+    .reviews-card__name {
+        text-align: center;
+    }
+    
+}
