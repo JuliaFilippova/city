@@ -46,12 +46,12 @@
                     <div class="nav-menu d-flex align-items-center">
                         <ul class="nav-menu__list d-flex">
                             <li>
-                                <a href="#" class="menu-active">
+                                <a href="index.html">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="menu-active">
                                     Ductwork
                                 </a>
                             </li>
@@ -90,93 +90,214 @@
                 </nav>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="form-content">
-                        <div class="form-content__head">
-                            <h2>
-                                Let us help you out 
-                            </h2>
-                            <p>
-                                Let’s build a perfect system for you and your company, t auctor This is Photoshop's ve Lorem ipsum. nibh vel velit auctor This is Photoshop's ve lorem Ipsum. nibh 
-                            </p>
-                        </div>
-                        <form action="" class="form-content__form">
-                            <input type="text" placeholder="Company Name">
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
-                            <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Phone Number">
-                            <input type="text" placeholder="Zip Code">
-                            <p class ="form-content__hint">
-                                Upload a cutsheet or the shop drawing 
-                            </p>
-                            <input type="text" placeholder="Choose file">
-                            <div class="add-file">
-                                <span class="add-file add-file__properly">
-                                    <i class="far fa-image"></i>
-                                    Five-Tips-Maintaining-HVAC-System.jpg
-                                </span>
-                                <span class="add-file add-file__error">
-                                    <i class="far fa-image"></i>
-                                    hvac-ductwork.jpg
-                                    <i class="far fa-times-circle"></i>
-                                </span>
-                            </div>
-                            <button type="submit" class="form-content__btn btn">
-                                Submit my Quote
-                            </button>
-                            <div class="form-content__info">
-                                <img src="img/form-file.png" alt="file">
+        <div class="form-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="form-content">
+                            <div class="form-content__head">
+                                <h2 class="section-title">
+                                    Let us help you out 
+                                </h2>
                                 <p>
-                                    We respect your privacy and do not tolerate spam and will never sell, rent, lease or give away your information (name, address, email, etc.) to any third party.
+                                    Let’s build a perfect system for you and your company, t auctor This is Photoshop's ve Lorem ipsum. nibh vel velit auctor This is Photoshop's ve lorem Ipsum. nibh 
                                 </p>
                             </div>
-                        </form>
+                            <form action="" class="form-content__form">
+                                <!-- <input type="text" placeholder="Company Name">
+                                <input type="text" placeholder="First Name">
+                                <input type="text" placeholder="Last Name">
+                                <input type="text" placeholder="Email">
+                                <input type="text" placeholder="Phone Number">
+                                <input type="number" placeholder="Zip Code" class="input-add"> -->
+                                <input type="text" placeholder="Company Name" name="company_name">
+                                <input type="text" placeholder="First Name" name="first_name">
+                                <input type="text" placeholder="Last Name" name="last_name">
+                                <input type="text" placeholder="Email" name="email" class="required">
+                                <input type="text" placeholder="Phone Number" name="phone">
+                                <input type="text" placeholder="Zip Code" name="zip_code" class="input-add">
+                                <p class ="form-content__hint">
+                                    Upload a cutsheet or the shop drawing 
+                                </p>
+                                <input type="button" class="choose_file" value="Choose file">
+                                <div class="add-file">
+                                    <!-- <span class="add-file add-file__properly">
+                                        <i class="far fa-image"></i>
+                                        Five-Tips-Maintaining-HVAC-System.jpg
+                                    </span>
+                                    <span class="add-file add-file__error">
+                                        <i class="far fa-image"></i>
+                                        hvac-ductwork.jpg
+                                        <i class="far fa-times-circle"></i>
+                                    </span> -->
+                                </div>
+                                <button type="submit" class="form-content__btn btn">
+                                    Submit my Quote
+                                </button>
+                                <div class="form-content__info">
+                                    <img src="img/form-file.png" alt="file">
+                                    <p>
+                                        We respect your privacy and do not tolerate spam and will never sell, rent, lease or give away your information (name, address, email, etc.) to any third party.
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="reviews-card__text">
-                        <p>
-                            “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
-                        </p>
-                        <span class="reviews-card__rating"></span>
-                        <span class="reviews-card__name">
-                            - George Carpenter
-                        </span>
-                    </div>
-                    <div class="reviews-card__text">
-                        <p>
-                            “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
-                        </p>
-                        <span class="reviews-card__rating"></span>
-                        <span class="reviews-card__name">
-                            - George Carpenter
-                        </span>
-                    </div>
-                    <div class="reviews-card__text">
-                        <p>
-                            “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
-                        </p>
-                        <span class="reviews-card__rating"></span>
-                        <span class="reviews-card__name">
-                            - George Carpenter
-                        </span>
-                    </div>
-                    <div class="reviews-card__text">
-                        <p>
-                            “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
-                        </p>
-                        <span class="reviews-card__rating"></span>
-                        <span class="reviews-card__name">
-                            - George Carpenter
-                        </span>
+                    <div class="col-lg-5">
+                        <div class="reviews-list">
+                            <div class="reviews-card__text">
+                                <p>
+                                    “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
+                                </p>
+                                <span class="reviews-card__rating"></span>
+                                <span class="reviews-card__name">
+                                    - George Carpenter
+                                </span>
+                            </div>
+                            <div class="reviews-card__text">
+                                <p>
+                                    “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
+                                </p>
+                                <span class="reviews-card__rating"></span>
+                                <span class="reviews-card__name">
+                                    - George Carpenter
+                                </span>
+                            </div>
+                            <div class="reviews-card__text">
+                                <p>
+                                    “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
+                                </p>
+                                <span class="reviews-card__rating"></span>
+                                <span class="reviews-card__name">
+                                    - George Carpenter
+                                </span>
+                            </div>
+                            <div class="reviews-card__text">
+                                <p>
+                                    “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
+                                </p>
+                                <span class="reviews-card__rating"></span>
+                                <span class="reviews-card__name">
+                                    - George Carpenter
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <footer class="footer" id="footer">
+        <div class="container-panel">
+            <div class="row justify-content-between">
+                <a href="#" class="col-xl-auto col-lg-3 col-md-4">
+                    <img src="img/footer-logo.png" alt="logo" class="footer-logo">
+                </a>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <ul class="footer-menu">
+                        <li class="footer-title">
+                            Page navigation
+                        </li>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Ductwork
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Resource Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contact us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Quote
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <ul class="footer-contacts">
+                        <li class="footer-title">
+                            Contact details
+                        </li>
+                        <li>
+                            <a href="mailto:citycooling@yahoo.com">
+                                Email: citycooling@yahoo.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+77183315400">
+                                Phone: (718) 331-5400
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+77183315360">
+                                Fax: (718) 331-5360
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-auto col-lg-3 col-sm-6">
+                    <div class="network-wrap">
+                        <p class="footer-title">
+                            Social media
+                        </p>
+                        <div class="footer-network">
+                            <a href="#" class="footer-network__link">
+                                <img src="img/icon-fb.png" alt="network">
+                            </a>
+                            <a href="#" class="footer-network__link">
+                                <img src="img/icon-tw.png" alt="network">
+                            </a>
+                            <a href="#" class="footer-network__link">
+                                <img src="img/icon-inst.png" alt="network">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-12 col-sm-6">
+                    <div class="footer-location">
+                        <p class="footer-title">
+                            Location
+                        </p>
+                        <div class="footer-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.276807486309!2d-73.99410168476244!3d40.62377705094538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2452489b41e39%3A0x6681998e333779f5!2sCiti%20Cooling%20Enterprises!5e0!3m2!1sru!2sru!4v1582459121197!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <span class="footer-location__address">
+                            Address: 1624 61st St, Brooklyn, NY 11204
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="footer-copy">
+                        © Copyright 2020 Citycooling enterprise. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
 <!-- AOS -->
