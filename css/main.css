@@ -127,7 +127,7 @@ button:focus {
     width: 281px;
     height: 100%;
     background: #fff;
-    padding: 70px 0 40px;
+    padding: 70px 25px 40px;
     z-index: 1;
 }
 .menu-list li a {
@@ -538,9 +538,17 @@ button:focus {
     margin-top: 19px;
 }
 .form-content__btn {
+    font-family: 'Metropolis 400';
     background: #437ecc;
     margin: 26px 0 40px;
     display: block;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+.form-content__btn:hover {
+    color: #437ecc;
+    background: transparent;
+    border: 2px solid #437ecc;
 }
 .form-content__info {
     display: -webkit-flex;
@@ -558,17 +566,17 @@ button:focus {
     margin-right: 17px;
 }
 .add-file {
-    display: inline-block;
+    display: block;
     margin-bottom: 7px;
-    padding-right: 15px;
+    padding-right: 35px;
 }
-.add-file:hover .fa-times-circle,
-.add-file:hover .fa-image,
+.add-file span:hover .fa-times-circle,
+.add-file span:hover .fa-image,
 .add-file .add-file__properly:hover {
     display: inline-block;
     color: #d53b3b;
 }
-.add-file:hover .add-file__error {
+.add-file span:hover .add-file__error {
     display: block;
 }
 .add-file i {
@@ -583,15 +591,20 @@ button:focus {
 /*.add-file .add-file__error {
     color: #d53b3b;
 }*/
+.btn-add-file {
+    
+}
 .fa-times-circle {
     display: none;
     position: absolute;
     top: 4px;
-    right: -10px;
+    right: 12px;
 }
-.input-add,
-.choose_file {
+.input-add {
     width: 380px!important;
+}
+.choose_file {
+    width: 198px!important;
 }
 .reviews-list {
     padding: 100px 120px 15px 70px;
@@ -871,7 +884,7 @@ button:focus {
     .footer-title:before {
         left: 45px;
     }
-    .input-add, .choose_file {
+    .input-add {
         width: 245px!important;
     }
     .contacts-data li a {
@@ -927,8 +940,8 @@ button:focus {
     .form-content {
         padding: 80px 15px 50px 15px;
     }
-    .input-add, .choose_file {
-        width: 210px!important;
+    .input-add {
+        width: 215px!important;
     }
     .reviews-list {
         padding: 100px 15px 15px 15px;

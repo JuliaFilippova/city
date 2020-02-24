@@ -81,6 +81,10 @@ $(() => {
               fileInputId   = spanForRemove.getAttribute('file-id');
 
         delete formFiles[fileInputId];
+
+        spanForRemove.parentElement.removeChild(
+            spanForRemove
+        )
     };
 
     const addFileHandler = e => {
