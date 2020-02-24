@@ -116,6 +116,7 @@ button:focus {
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
+    box-shadow: 0 0 20px 0 rgba(35, 49, 66, 0.1);
 }
 .nav-menu__list {
     margin-left: auto;
@@ -477,7 +478,16 @@ button:focus {
 }
 /*section-footer*/
 /*PAGE FORM*/
+.form-section {
+    padding: 70px 0 100px;
+}
+.form-content {
+    padding: 80px 120px 50px 50px;
+    border: 3px solid #437ecc;
+    border-radius: 15px;
+}
 .form-content__form input {
+    font-family: 'Metropolis 400';
     display: inline-block;
     padding: 16px 17px 14px;
     border: 2px solid #c0bec6;
@@ -485,12 +495,29 @@ button:focus {
     margin: 15px 0 20px;
     width: 450px;
 }
+.form-content__form input:focus {
+    outline: none;
+}
+.form-content__head .section-title {
+    color: #437ecc;
+    font-family: 'GothamPro 700';
+}
+.form-content__head .section-title:before {
+    left: 100px;
+    background: #437ecc;
+}
+.form-content__head p {
+    margin: 45px 0 20px;
+    color: #777;
+    font-family: 'Metropolis 400';
+}
 .form-content__hint {
-
+    color: #777;
+    margin-top: 19px;
 }
 .form-content__btn {
     background: #437ecc;
-    margin: 26px 0 30px;
+    margin: 26px 0 40px;
     display: block;
 }
 .form-content__info {
@@ -499,26 +526,107 @@ button:focus {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    align-items: center;
 }
-.form-content__info img{
+.form-content__info p {
+    color: #777;
+    font-family: 'Metropolis 400';
+}
+.form-content__info img {
     margin-right: 17px;
 }
 .add-file {
+    display: inline-block;
+    margin-bottom: 7px;
+    padding-right: 15px;
+}
+.add-file:hover .fa-times-circle,
+.add-file:hover .fa-image {
+    display: inline-block;
+    color: #d53b3b;
+}
+.add-file:hover .add-file__error {
     display: block;
 }
 .add-file i {
     font-size: 20px;
-    
 }
 .add-file .add-file__properly {
     color: #57cc51;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 } 
-.add-file .add-file__error {
+/*.add-file .add-file__error {
     color: #d53b3b;
-} 
+}*/
+.fa-times-circle {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: -10px;
+}
+.input-add,
+.choose_file {
+    width: 380px!important;
+}
+.reviews-list {
+    padding: 100px 120px 15px 70px;
+}
+.reviews-list .reviews-card__text {
+    margin-left: 0;
+    margin-bottom: 120px;
+}
+.reviews-list .reviews-card__text p {
+    font-size: 18px;
+}
 /*PAGE FORM*/
+/**/
+.head-contacts {
+    background: url('../img/contacts-bg.png') no-repeat center /cover;
+    padding: 250px 0 270px;
+    text-align: center;
+}
+.head-contacts .section-title {
+    color: #fff;
+    font-family: 'GothamPro 700';
+}
+.head-contacts .section-title:before {
+    background: #fff;
+    height: 4px;
+    width: 300px;
+}
+.contacts-wrap {
+    padding: 70px 0;
+}
+.section-contacts {
+    padding: 100px 100px 200px;
+    box-shadow: 0 0 40px 0 rgba(35, 49, 66, 0.2);
+    border-radius: 15px;
+}
+.contact-box .section-title {
+    color: #4c75ab;
+    margin-bottom: 55px;
+}
+.contact-box .section-title:before {
+    background: #4c75ab;
+    left: 100px;
+}
+.contacts-data {
+    margin-top: 30px;
+}
+.contacts-data li a {
+    font-size: 30px;
+    font-family: 'Metropolis 400';
+    margin-bottom: 37px;
+    display: inline-block;
+}
+.contacts-map iframe {
+    width: 440px;
+    height: 400px;
+}
 /*-- MEDIA QUERIES --*/
-/* 768-992px col-md */
+/* col */
 @media screen and (max-width: 1300px) {
     .nav-logo img {
         width: 200px;
@@ -542,7 +650,7 @@ button:focus {
         max-width: 200px;
     }
 }
-/* 768-992px col-md */
+/* col */
 @media screen and (max-width: 1199px) {
     h1 {
         font-size: 65px;
@@ -590,8 +698,17 @@ button:focus {
     .footer-location {
         margin-top: 55px;
     }
+    .reviews-list {
+        padding: 100px 20px 15px 30px;
+    }
+    .form-content {
+        padding: 80px 50px 50px 20px;
+    }
+    .form-content__form input {
+        width: 100%;
+    }
 }
-/* 768-992px col-md */
+/* col */
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 42px;
@@ -640,9 +757,25 @@ button:focus {
     .network-wrap {
         margin-top: 55px;
     }
+    .form-content {
+        padding: 80px 130px 50px 30px;
+    }
+    .reviews-list {
+        padding: 100px 115px 15px 115px;
+    }
+    .contact-box {
+        margin-top: 50px;
+    }
+    .section-contacts {
+        padding: 30px 100px 90px;
+    }
+    .contacts-map iframe {
+        width: 100%;
+        height: 400px;
+    }
         
 }
-/* 768-992px col-md */
+/* col */
 @media screen and (max-width: 768px) {
     .about-info__text p {
         font-size: 20px;
@@ -664,8 +797,17 @@ button:focus {
     .footer-contacts {
         margin-top: 45px;
     }
+    .reviews-list {
+        padding: 100px 65px 15px 65px;
+    }
+    .form-content {
+        padding: 80px 45px 50px 20px;
+    }
+    .section-contacts {
+        padding: 30px 30px 90px;
+    }
 }
-/* 768-992px col-md */
+/* col */
 @media screen and (max-width: 576px) {
     h2 {
         font-size: 30px;
@@ -706,9 +848,23 @@ button:focus {
     .footer-title:before {
         left: 45px;
     }
+    .input-add, .choose_file {
+        width: 245px!important;
+    }
+    .contacts-data li a {
+        font-size: 21px;
+    }
+    .head-contacts h1 {
+        font-size: 38px;
+    }
+    .head-contacts .section-title:before {
+        background: #fff;
+        height: 4px;
+        width: 200px;
+    }
     
 }
-/* 768-992px col-md */
+/* col */
 @media screen and (max-width: 420px) {
     h2 {
         font-size: 24px;
@@ -742,5 +898,23 @@ button:focus {
     .reviews-card__name {
         text-align: center;
     }
-    
+    .form-section {
+        padding: 70px 0 20px;
+    }
+    .form-content {
+        padding: 80px 15px 50px 15px;
+    }
+    .input-add, .choose_file {
+        width: 210px!important;
+    }
+    .reviews-list {
+        padding: 100px 15px 15px 15px;
+    }
+    .section-contacts {
+        padding: 30px 10px 90px;
+    }
+    .contacts-data li a {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
 }

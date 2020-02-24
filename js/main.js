@@ -137,7 +137,7 @@ $(() => {
         icon.classList.add('fa-image');
 
         iconRemove.classList.add('far');
-        // iconRemove.classList.add('fa-times-circle');
+        iconRemove.classList.add('fa-times-circle');
         iconRemove.addEventListener('click', removeFileHandler);
 
         span.appendChild(icon);
