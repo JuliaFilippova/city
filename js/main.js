@@ -2,8 +2,6 @@ AOS.init();
 
 $(document).ready(function () {
     $('.slider-reviews').slick({
-        // centerMode:     true,
-        // centerPadding:  '1px',
         dots:           false,
         infinite:       true,
         speed:          700,
@@ -94,7 +92,14 @@ $(() => {
             cache:       false,
             contentType: false,
             processData: false,
-        })
+            context: document.body
+        }).done(function() {
+            $(form).trigger('reset');
+            
+            Object.values(formFiles).map((e, i) => delete formFiles[i]);
+
+            $(filesContainer).empty();
+        });
     };
 
     const removeFileHandler = e => {
