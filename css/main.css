@@ -110,6 +110,33 @@ button:focus {
 .btn:hover {
     color: #fff;
 }
+#modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.menu-modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 281px;
+    height: 100%;
+    background: #fff;
+    padding: 70px 0 40px;
+    z-index: 1;
+}
+.menu-list li a {
+    font-size: 28px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
 /*header*/
 /*nav-menu*/
 .nav-bar {
@@ -388,11 +415,6 @@ button:focus {
     color: #777;
     font-family: 'Metropolis 400';
 }
-/*.slick-center .reviews-card {
-    width: 100%;
-    box-shadow: 0 0 60px 0 rgba(35, 49, 66, 0.3);
-    z-index: 444;
-}*/
 /*section-reviews*/
 /*section-footer*/
 .footer {
@@ -541,7 +563,8 @@ button:focus {
     padding-right: 15px;
 }
 .add-file:hover .fa-times-circle,
-.add-file:hover .fa-image {
+.add-file:hover .fa-image,
+.add-file .add-file__properly:hover {
     display: inline-block;
     color: #d53b3b;
 }
@@ -916,5 +939,12 @@ button:focus {
     .contacts-data li a {
         font-size: 18px;
         margin-bottom: 20px;
+    }
+    .menu-modal {
+        width: 220px;
+        padding: 40px 0 40px;
+    }
+    .menu-list li a {
+        font-size: 21px;
     }
 }

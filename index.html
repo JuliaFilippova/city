@@ -17,15 +17,10 @@
     <meta property="og:type" content="">
     <meta property="og:image" content="">
     <meta property="og:site_name" content="">
-    <!-- FAVICON-->
-    <!-- <link rel="icon" href="img/favicon.png" type="image/x-icon">
-	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> -->
-    <!-- FONTAWESOME -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
     <link rel="stylesheet" href="css/slick.css">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -398,11 +393,51 @@
             </div>
         </div>
     </footer>
+    <!-- REQUEST MODAL WINDOW-END -->
+    <div id="modal"></div> <!-- фон для модальных окон -->
+    <!-- MENU MODAL WINDOW -->
+    <div class="menu-modal" id="menu-modal">
+        <ul class="menu-list">
+            <li>
+                <a href="index.html" class="menu-active">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="form.html">
+                    Ductwork
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    About Us
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Gallery 
+                </a>
+            </li>
+            <li>
+                <a href="contacts.html">
+                    Contact us
+                </a>
+            </li>
+            <li>
+                <a href="tel:+79183317400" class="nav-phone phone">
+                    (918) 331-7400
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- MENU MODAL WINDOW-END -->
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.arcticmodal-0.3.min.js"></script>
 <!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/slick.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 </html>

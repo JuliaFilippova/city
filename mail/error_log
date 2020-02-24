@@ -1,0 +1,36 @@
+[24-Feb-2020 21:54:32 Europe/Moscow] PHP Warning:  trim() expects parameter 1 to be string, array given in /home/bhx20547/city.codeid.ru/mail/mail.php on line 13
+[24-Feb-2020 21:54:32 Europe/Moscow] PHP Notice:  Undefined offset: 0 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:54:32 Europe/Moscow] PHP Notice:  Undefined offset: 1 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:54:32 Europe/Moscow] PHP Notice:  Undefined offset: 2 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:54:32 Europe/Moscow] PHP Notice:  Undefined offset: 3 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:54:32 Europe/Moscow] PHP Notice:  Undefined offset: 4 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:55:23 Europe/Moscow] PHP Warning:  trim() expects parameter 1 to be string, array given in /home/bhx20547/city.codeid.ru/mail/mail.php on line 13
+[24-Feb-2020 21:55:23 Europe/Moscow] PHP Notice:  Undefined offset: 0 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:55:23 Europe/Moscow] PHP Notice:  Undefined offset: 1 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:55:23 Europe/Moscow] PHP Notice:  Undefined offset: 2 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:55:23 Europe/Moscow] PHP Notice:  Undefined offset: 3 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:55:23 Europe/Moscow] PHP Notice:  Undefined offset: 4 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:56:58 Europe/Moscow] PHP Notice:  Undefined offset: 0 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:56:58 Europe/Moscow] PHP Notice:  Undefined offset: 1 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:56:58 Europe/Moscow] PHP Notice:  Undefined offset: 2 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:56:58 Europe/Moscow] PHP Notice:  Undefined offset: 3 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:56:58 Europe/Moscow] PHP Notice:  Undefined offset: 4 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:57:50 Europe/Moscow] PHP Notice:  Undefined offset: 0 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:57:50 Europe/Moscow] PHP Notice:  Undefined offset: 1 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:57:50 Europe/Moscow] PHP Notice:  Undefined offset: 2 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:57:50 Europe/Moscow] PHP Notice:  Undefined offset: 3 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:57:50 Europe/Moscow] PHP Notice:  Undefined offset: 4 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:58:33 Europe/Moscow] PHP Notice:  Undefined offset: 0 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:58:33 Europe/Moscow] PHP Notice:  Undefined offset: 1 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:58:33 Europe/Moscow] PHP Notice:  Undefined offset: 2 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:58:33 Europe/Moscow] PHP Notice:  Undefined offset: 3 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 21:58:33 Europe/Moscow] PHP Notice:  Undefined offset: 4 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 22:02:13 Europe/Moscow] PHP Notice:  Undefined offset: 0 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 22:02:13 Europe/Moscow] PHP Notice:  Undefined offset: 1 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 22:02:13 Europe/Moscow] PHP Notice:  Undefined offset: 2 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 22:02:13 Europe/Moscow] PHP Notice:  Undefined offset: 3 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 22:02:13 Europe/Moscow] PHP Notice:  Undefined offset: 4 in /home/bhx20547/city.codeid.ru/mail/mail.php on line 43
+[24-Feb-2020 22:49:56 Europe/Moscow] PHP Warning:  trim() expects parameter 1 to be string, array given in /home/bhx20547/city.codeid.ru/mail/mail.php on line 40
+[24-Feb-2020 22:53:10 Europe/Moscow] PHP Warning:  trim() expects parameter 1 to be string, array given in /home/bhx20547/city.codeid.ru/mail/mail.php on line 45
+[24-Feb-2020 22:57:41 Europe/Moscow] PHP Warning:  trim() expects parameter 1 to be string, array given in /home/bhx20547/city.codeid.ru/mail/mail.php on line 40
+[24-Feb-2020 23:09:02 Europe/Moscow] PHP Warning:  trim() expects parameter 1 to be string, array given in /home/bhx20547/city.codeid.ru/mail/mail.php on line 39

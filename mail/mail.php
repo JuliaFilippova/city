@@ -1,68 +1,30 @@
-<!-- <?php
-
-$recepient = "yulia.filippovaa@yandex.ru";
-$siteName = "CityCooling";
-
-$companyName = trim($_POST["company_name"]);
-$firstName = trim($_POST["first_name"]);
-$lastName = trim($_POST["last_name"]);
-$email = trim($_POST["email"]);
-$phone = trim($_POST["phone"]);
-$zipСode = trim($_POST["zip_code"]);
-
-$files = trim($_FILES["files"]);
-
-$message = "Компания: $companyName Имя: $firstName \nТелефон: $phone \nEmail: $email \nИндекс: $zipСode \nФайл: $files";
-
-$pagetitle = "Заявка с сайта \"$siteName\"";
-mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
-
-?> -->
-
 <?php
 
-function multi_attach_mail($to, $subject, $message, $senderEmail, $senderName, $files = [])
-{
-    $from    = $senderName . " <" . $senderEmail . ">";
-    $headers = "From: $from";
+$files = isset($_FILES['files']) ? $_FILES['files'] : [];
 
-    // Boundary
-    $semi_rand     = md5(time());
-    $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
+$filesCount = isset($files['name']) && is_array($files['name']) ? count($files['name']) : 0;
 
-    // Headers for attachment
-    $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
+$uploadedFiles = [];
 
-    // Multipart boundary
-    $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
-        "Content-Transfer-Encoding: 7bit\n\n" . $message . "\n\n";
-
-    // Preparing attachment
-    if (!empty($files)) {
-        for ($i = 0; $i < count($files); $i++) {
-            if (is_file($files[$i])) {
-                $file_name = basename($files[$i]);
-                $file_size = filesize($files[$i]);
-
-                $message .= "--{$mime_boundary}\n";
-                $fp      = @fopen($files[$i], "rb");
-                $data    = @fread($fp, $file_size);
-                fclose($fp);
-                $data    = chunk_split(base64_encode($data));
-                $message .= "Content-Type: application/octet-stream; name=\"" . $file_name . "\"\n" .
-                    "Content-Description: " . $file_name . "\n" .
-                    "Content-Disposition: attachment;\n" . " filename=\"" . $file_name . "\"; size=" . $file_size . ";\n" .
-                    "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
-            }
-        }
-    }
-
-    $message    .= "--{$mime_boundary}--";
-    $returnpath = "-f" . $senderEmail;
-
-    mail($to, $subject, $message, $headers, $returnpath);
+if (!is_dir('uploads')) {
+    mkdir('uploads');
 }
 
+for ($i = 0; $i < $filesCount; $i++) {
+    $fileName = implode(
+        '',
+        array_map('trim', explode(' ', $files['name'][$i]))
+    );
+
+    $filePath = 'uploads' . DIRECTORY_SEPARATOR . time() . $fileName;
+
+    move_uploaded_file($files['tmp_name'][$i], $filePath);
+
+    $uploadedFiles[] = [
+        'name' => $files['name'][$i],
+        'path' => $_SERVER['HTTP_HOST'] . DIRECTORY_SEPARATOR . 'mail' . DIRECTORY_SEPARATOR . $filePath
+    ];
+}
 
 $recepient = "yulia.filippovaa@yandex.ru";
 $siteName  = "CityCooling";
@@ -74,12 +36,30 @@ $email       = trim($_POST["email"]);
 $phone       = trim($_POST["phone"]);
 $zipCode     = trim($_POST["zip_code"]);
 
-$files = isset($_FILES['files']) && is_array($_FILES['files']) ? $_FILES['files'] : [];
+$files = trim($_FILES["files"]);
 
-$message = "Компания: $companyName Имя: $firstName \nТелефон: $phone \nEmail: $email \nИндекс: $zipCode";
+$pagetitle = "Заявка с сайта {$siteName}";
 
-$pagetitle = "Заявка с сайта \"$siteName\"";
+$message = "<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>{$pagetitle}</title></head><body>";
 
-multi_attach_mail($recepient, $pagetitle, $message, $recepient, $siteName, $files);
+$message .= "
+<p>Компания: {$companyName}</p>
+<p>Имя: {$firstName}</p>
+<p>Телефон: {$phone}</p>
+<p>Email: {$email}</p>
+<p>Индекс: {$zipCode}</p>
+";
 
-?>
+if (count($uploadedFiles) > 0) {
+    $message .= "\n Файлы:";
+
+    foreach ($uploadedFiles as $fileInfo) {
+        $url = "<a href='{$fileInfo['path']}' target='_blank' download>{$fileInfo['name']}</a>";
+
+        $message .= "\n" . $url;
+    }
+}
+
+$message .= "</body></html>";
+
+mail($recepient, $pagetitle, $message, "Content-type: text/html; charset=\"utf-8\"\n From: $recepient");
