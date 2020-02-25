@@ -40,7 +40,13 @@ $files = trim($_FILES["files"]);
 
 $pagetitle = "Заявка с сайта {$siteName}";
 
-$message = "<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>{$pagetitle}</title></head><body>";
+$message = "
+<html>
+<head>
+<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">
+<title>{$pagetitle}</title>
+</head>
+<body>";
 
 $message .= "
 <p>Компания: {$companyName}</p>
