@@ -505,7 +505,7 @@ button:focus {
     padding: 70px 0 100px;
 }
 .form-content {
-    padding: 80px 120px 50px 50px;
+    padding: 80px 65px 50px 50px;
     border: 3px solid #437ecc;
     border-radius: 15px;
 }
@@ -516,7 +516,7 @@ button:focus {
     border: 2px solid #c0bec6;
     border-radius: 10px;
     margin: 15px 0 20px;
-    width: 450px;
+    width: 370px;
 }
 .form-content__form input:focus {
     outline: none;
@@ -543,8 +543,10 @@ button:focus {
     background: #437ecc;
     margin: 26px 0 40px;
     display: block;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 2px solid transparent;
+    font-size: 17px;
+    padding: 11px 10px;
 }
 .form-content__btn:hover {
     color: #437ecc;
@@ -562,6 +564,7 @@ button:focus {
 .form-content__info p {
     color: #777;
     font-family: 'Metropolis 400';
+    font-size: 14px;
 }
 .form-content__info img {
     margin-right: 17px;
@@ -589,11 +592,14 @@ button:focus {
     display: inline-block;
     cursor: pointer;
 } 
-/*.add-file .add-file__error {
-    color: #d53b3b;
-}*/
-.btn-add-file {
-    
+.input-email {
+    position: relative;
+}
+.input-email:before {
+    content: '*';
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .fa-times-circle {
     display: none;
@@ -602,13 +608,13 @@ button:focus {
     right: 12px;
 }
 .input-add {
-    width: 380px!important;
+    width: 300px!important;
 }
 .choose_file {
     width: 198px!important;
 }
 .reviews-list {
-    padding: 100px 120px 15px 70px;
+    padding: 100px 60px 15px 50px;
 }
 .reviews-list .reviews-card__text {
     margin-left: 0;
@@ -741,9 +747,6 @@ button:focus {
     .form-content {
         padding: 80px 50px 50px 20px;
     }
-    .form-content__form input {
-        width: 100%;
-    }
 }
 /* col */
 @media screen and (max-width: 992px) {
@@ -795,7 +798,7 @@ button:focus {
         margin-top: 55px;
     }
     .form-content {
-        padding: 80px 130px 50px 30px;
+        padding: 80px 90px 50px 30px;
     }
     .reviews-list {
         padding: 100px 115px 15px 115px;
@@ -886,7 +889,7 @@ button:focus {
         left: 45px;
     }
     .input-add {
-        width: 245px!important;
+        width: 225px!important;
     }
     .contacts-data li a {
         font-size: 21px;
@@ -898,6 +901,9 @@ button:focus {
         background: #fff;
         height: 4px;
         width: 200px;
+    }
+    .form-content__form input {
+        width: 100%;
     }
     
 }
@@ -942,7 +948,7 @@ button:focus {
         padding: 80px 15px 50px 15px;
     }
     .input-add {
-        width: 215px!important;
+        width: 205px!important;
     }
     .reviews-list {
         padding: 100px 15px 15px 15px;

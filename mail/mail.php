@@ -26,7 +26,7 @@ for ($i = 0; $i < $filesCount; $i++) {
     ];
 }
 
-$recepient = "yulia.filippovaa@yandex.ru";
+$recepient = "citycooling@yahoo.com";
 $siteName  = "CityCooling";
 
 $companyName = trim($_POST["company_name"]);
